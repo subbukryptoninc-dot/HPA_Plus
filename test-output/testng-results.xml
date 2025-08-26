@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="3" failed="10" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-25T12:56:44 IST" name="Suite" finished-at="2025-08-25T12:57:11 IST" duration-ms="27490">
+    <groups>
+      <group name="ShiftAddTests">
+        <method signature="AppOpenTest.appcall()[pri:0, instance:HpaTestCases.AppOpenTest@39529185]" name="appcall" class="HpaTestCases.AppOpenTest"/>
+        <method signature="DashboardTest.DashTest()[pri:0, instance:HpaTestCases.DashboardTest@41fbdac4]" name="DashTest" class="HpaTestCases.DashboardTest"/>
+        <method signature="LoginTest.loginmethodTest()[pri:0, instance:HpaTestCases.LoginTest@647e447]" name="loginmethodTest" class="HpaTestCases.LoginTest"/>
+        <method signature="ShiftAddTests.NormalShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:HpaTestCases.ShiftAddTests@2c767a52]" name="NormalShiftTest" class="HpaTestCases.ShiftAddTests"/>
+        <method signature="ShiftAddTests.NormalTrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:HpaTestCases.ShiftAddTests@2c767a52]" name="NormalTrasnportTest" class="HpaTestCases.ShiftAddTests"/>
+        <method signature="ShiftAddTests.RepeatTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:HpaTestCases.ShiftAddTests@2c767a52]" name="RepeatTest" class="HpaTestCases.ShiftAddTests"/>
+        <method signature="ShiftAddTests.RepeattrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:HpaTestCases.ShiftAddTests@2c767a52]" name="RepeattrasnportTest" class="HpaTestCases.ShiftAddTests"/>
+        <method signature="ShiftAddTests.SplitShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:HpaTestCases.ShiftAddTests@2c767a52]" name="SplitShiftTest" class="HpaTestCases.ShiftAddTests"/>
+      </group> <!-- ShiftAddTests -->
+    </groups>
+    <test started-at="2025-08-25T12:56:44 IST" name="Test" finished-at="2025-08-25T12:57:11 IST" duration-ms="27490">
+      <class name="HpaTestCases.DashboardTest">
+        <test-method signature="DashTest()[pri:0, instance:HpaTestCases.DashboardTest@41fbdac4]" started-at="2025-08-25T12:56:58 IST" name="DashTest" finished-at="2025-08-25T12:57:02 IST" duration-ms="3629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashTest -->
+      </class> <!-- HpaTestCases.DashboardTest -->
+      <class name="HpaTestCases.LoginTest">
+        <test-method signature="loginmethodTest()[pri:0, instance:HpaTestCases.LoginTest@647e447]" started-at="2025-08-25T12:56:53 IST" name="loginmethodTest" finished-at="2025-08-25T12:56:58 IST" duration-ms="5239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginmethodTest -->
+      </class> <!-- HpaTestCases.LoginTest -->
+      <class name="HpaTestCases.ShiftAddTests">
+        <test-method signature="NormalShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:03 IST" name="NormalShiftTest" data-provider="shiftData" finished-at="2025-08-25T12:57:10 IST" duration-ms="6460" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[29/09/2025 06:30 AM]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[29/09/2025 08:30 PM]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[30/09/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:722)
+at com.microsoft.playwright.impl.FrameImpl.selectOptionImpl(FrameImpl.java:689)
+at com.microsoft.playwright.impl.FrameImpl.lambda$selectOption$31(FrameImpl.java:677)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:677)
+at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:119)
+at com.microsoft.playwright.impl.LocatorImpl.selectOption(LocatorImpl.java:511)
+at com.microsoft.playwright.Locator.selectOption(Locator.java:4562)
+at HpaPlusMethods.ShiftAddMethod.normalShift(ShiftAddMethod.java:105)
+at HpaTestCases.ShiftAddTests.NormalShiftTest(ShiftAddTests.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NormalShiftTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:10 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:10 IST" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NormalShiftTest status=FAILURE method=ShiftAddTests.NormalShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="NormalShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:10 IST" name="NormalShiftTest" data-provider="shiftData" finished-at="2025-08-25T12:57:10 IST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[04/10/2025 6:30 am]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[04/10/2025 8:30 pm]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[05/10/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.normalShift(ShiftAddMethod.java:96)
+at HpaTestCases.ShiftAddTests.NormalShiftTest(ShiftAddTests.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NormalShiftTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:10 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:10 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NormalShiftTest status=FAILURE method=ShiftAddTests.NormalShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="NormalTrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:10 IST" name="NormalTrasnportTest" data-provider="shiftData" finished-at="2025-08-25T12:57:10 IST" duration-ms="5" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[29/09/2025 06:30 AM]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[29/09/2025 08:30 PM]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[30/09/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.normaltranshift(ShiftAddMethod.java:137)
+at HpaTestCases.ShiftAddTests.NormalTrasnportTest(ShiftAddTests.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NormalTrasnportTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:10 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:10 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NormalTrasnportTest status=FAILURE method=ShiftAddTests.NormalTrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="NormalTrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:10 IST" name="NormalTrasnportTest" data-provider="shiftData" finished-at="2025-08-25T12:57:10 IST" duration-ms="3" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[04/10/2025 6:30 am]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[04/10/2025 8:30 pm]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[05/10/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.normaltranshift(ShiftAddMethod.java:137)
+at HpaTestCases.ShiftAddTests.NormalTrasnportTest(ShiftAddTests.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NormalTrasnportTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:10 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:10 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NormalTrasnportTest status=FAILURE method=ShiftAddTests.NormalTrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="SplitShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="SplitShiftTest" data-provider="shiftData" finished-at="2025-08-25T12:57:11 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[29/09/2025 06:30 AM]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[29/09/2025 08:30 PM]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[30/09/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.NormalSplitShift(ShiftAddMethod.java:178)
+at HpaTestCases.ShiftAddTests.SplitShiftTest(ShiftAddTests.java:116)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SplitShiftTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:11 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SplitShiftTest status=FAILURE method=ShiftAddTests.SplitShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="SplitShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="SplitShiftTest" data-provider="shiftData" finished-at="2025-08-25T12:57:11 IST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[04/10/2025 6:30 am]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[04/10/2025 8:30 pm]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[05/10/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.NormalSplitShift(ShiftAddMethod.java:178)
+at HpaTestCases.ShiftAddTests.SplitShiftTest(ShiftAddTests.java:116)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SplitShiftTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:11 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SplitShiftTest status=FAILURE method=ShiftAddTests.SplitShiftTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="RepeatTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="RepeatTest" data-provider="shiftData" finished-at="2025-08-25T12:57:11 IST" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[29/09/2025 06:30 AM]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[29/09/2025 08:30 PM]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[30/09/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.NormalRepeatShift(ShiftAddMethod.java:217)
+at HpaTestCases.ShiftAddTests.RepeatTest(ShiftAddTests.java:145)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RepeatTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RepeatTest status=FAILURE method=ShiftAddTests.RepeatTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="RepeatTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="RepeatTest" data-provider="shiftData" finished-at="2025-08-25T12:57:11 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[04/10/2025 6:30 am]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[04/10/2025 8:30 pm]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[05/10/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.NormalRepeatShift(ShiftAddMethod.java:217)
+at HpaTestCases.ShiftAddTests.RepeatTest(ShiftAddTests.java:145)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RepeatTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RepeatTest status=FAILURE method=ShiftAddTests.RepeatTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="RepeattrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="RepeattrasnportTest" data-provider="shiftData" finished-at="2025-08-25T12:57:11 IST" duration-ms="3" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[29/09/2025 06:30 AM]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[29/09/2025 06:30 PM]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[29/09/2025 08:30 PM]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[30/09/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.NormalRepeatTransShift(ShiftAddMethod.java:261)
+at HpaTestCases.ShiftAddTests.RepeattrasnportTest(ShiftAddTests.java:173)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RepeattrasnportTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RepeattrasnportTest status=FAILURE method=ShiftAddTests.RepeattrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+        <test-method signature="RepeattrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="RepeattrasnportTest" data-provider="shiftData" finished-at="2025-08-25T12:57:11 IST" duration-ms="3" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[04/10/2025 6:30 am]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[04/10/2025 6:30 pm]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[04/10/2025 8:30 pm]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[05/10/2025]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+at com.microsoft.playwright.Locator.click(Locator.java:2406)
+at HpaPlusMethods.ShiftAddMethod.NormalRepeatTransShift(ShiftAddMethod.java:261)
+at HpaTestCases.ShiftAddTests.RepeattrasnportTest(ShiftAddTests.java:173)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RepeattrasnportTest -->
+        <test-method is-config="true" signature="takeScreenshotonfailure(org.testng.ITestResult)[pri:0, instance:HpaTestCases.ShiftAddTests@2c767a52]" started-at="2025-08-25T12:57:11 IST" name="takeScreenshotonfailure" finished-at="2025-08-25T12:57:11 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RepeattrasnportTest status=FAILURE method=ShiftAddTests.RepeattrasnportTest(java.lang.String,int,int,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:HpaTestCases.ShiftAddTests@2c767a52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonfailure -->
+      </class> <!-- HpaTestCases.ShiftAddTests -->
+      <class name="HpaTestCases.AppOpenTest">
+        <test-method signature="appcall()[pri:0, instance:HpaTestCases.AppOpenTest@39529185]" started-at="2025-08-25T12:56:44 IST" name="appcall" finished-at="2025-08-25T12:56:53 IST" duration-ms="9504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appcall -->
+      </class> <!-- HpaTestCases.AppOpenTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

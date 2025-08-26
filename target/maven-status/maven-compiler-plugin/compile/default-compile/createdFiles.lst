@@ -1,0 +1,7 @@
+HpaDependables\PlaywrightFactory.class
+HpaDependables\Values.class
+HpaPlusMethods\AppOpen.class
+HpaPlusMethods\DashboardMethod.class
+HpaDependables\ExcelUtility.class
+HpaPlusMethods\LoginMethod.class
+HpaDependables\TestUtils.class

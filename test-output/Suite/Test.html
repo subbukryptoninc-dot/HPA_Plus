@@ -1,0 +1,1172 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 25 12:56:44 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>27 seconds (27490 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>ShiftAddTests </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.SplitShiftTest()'><b>SplitShiftTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalSplitShift(ShiftAddMethod.java:178)
+	at HpaTestCases.ShiftAddTests.SplitShiftTest(ShiftAddTests.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace357653585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace357653585'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalSplitShift(ShiftAddMethod.java:178)
+	at HpaTestCases.ShiftAddTests.SplitShiftTest(ShiftAddTests.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.RepeatTest()'><b>RepeatTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatShift(ShiftAddMethod.java:217)
+	at HpaTestCases.ShiftAddTests.RepeatTest(ShiftAddTests.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1444494461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1444494461'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatShift(ShiftAddMethod.java:217)
+	at HpaTestCases.ShiftAddTests.RepeatTest(ShiftAddTests.java:145)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.NormalShiftTest()'><b>NormalShiftTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:722)
+	at com.microsoft.playwright.impl.FrameImpl.selectOptionImpl(FrameImpl.java:689)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$selectOption$31(FrameImpl.java:677)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:677)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:119)
+	at com.microsoft.playwright.impl.LocatorImpl.selectOption(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.selectOption(Locator.java:4562)
+	at HpaPlusMethods.ShiftAddMethod.normalShift(ShiftAddMethod.java:105)
+	at HpaTestCases.ShiftAddTests.NormalShiftTest(ShiftAddTests.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace699871906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace699871906'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:722)
+	at com.microsoft.playwright.impl.FrameImpl.selectOptionImpl(FrameImpl.java:689)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$selectOption$31(FrameImpl.java:677)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:677)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:119)
+	at com.microsoft.playwright.impl.LocatorImpl.selectOption(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.selectOption(Locator.java:4562)
+	at HpaPlusMethods.ShiftAddMethod.normalShift(ShiftAddMethod.java:105)
+	at HpaTestCases.ShiftAddTests.NormalShiftTest(ShiftAddTests.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>6</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.RepeatTest()'><b>RepeatTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatShift(ShiftAddMethod.java:217)
+	at HpaTestCases.ShiftAddTests.RepeatTest(ShiftAddTests.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1726715997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1726715997'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatShift(ShiftAddMethod.java:217)
+	at HpaTestCases.ShiftAddTests.RepeatTest(ShiftAddTests.java:145)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.RepeattrasnportTest()'><b>RepeattrasnportTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatTransShift(ShiftAddMethod.java:261)
+	at HpaTestCases.ShiftAddTests.RepeattrasnportTest(ShiftAddTests.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1710228600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1710228600'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatTransShift(ShiftAddMethod.java:261)
+	at HpaTestCases.ShiftAddTests.RepeattrasnportTest(ShiftAddTests.java:173)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.NormalShiftTest()'><b>NormalShiftTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normalShift(ShiftAddMethod.java:96)
+	at HpaTestCases.ShiftAddTests.NormalShiftTest(ShiftAddTests.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace611502040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace611502040'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normalShift(ShiftAddMethod.java:96)
+	at HpaTestCases.ShiftAddTests.NormalShiftTest(ShiftAddTests.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.NormalTrasnportTest()'><b>NormalTrasnportTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normaltranshift(ShiftAddMethod.java:137)
+	at HpaTestCases.ShiftAddTests.NormalTrasnportTest(ShiftAddTests.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace877363600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace877363600'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normaltranshift(ShiftAddMethod.java:137)
+	at HpaTestCases.ShiftAddTests.NormalTrasnportTest(ShiftAddTests.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.RepeattrasnportTest()'><b>RepeattrasnportTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatTransShift(ShiftAddMethod.java:261)
+	at HpaTestCases.ShiftAddTests.RepeattrasnportTest(ShiftAddTests.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1300132917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1300132917'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatTransShift(ShiftAddMethod.java:261)
+	at HpaTestCases.ShiftAddTests.RepeattrasnportTest(ShiftAddTests.java:173)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.NormalTrasnportTest()'><b>NormalTrasnportTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normaltranshift(ShiftAddMethod.java:137)
+	at HpaTestCases.ShiftAddTests.NormalTrasnportTest(ShiftAddTests.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904609259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1904609259'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normaltranshift(ShiftAddMethod.java:137)
+	at HpaTestCases.ShiftAddTests.NormalTrasnportTest(ShiftAddTests.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+<tr>
+<td title='HpaTestCases.ShiftAddTests.SplitShiftTest()'><b>SplitShiftTest</b><br>Test class: HpaTestCases.ShiftAddTests<br>Parameters: TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalSplitShift(ShiftAddMethod.java:178)
+	at HpaTestCases.ShiftAddTests.SplitShiftTest(ShiftAddTests.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2081269248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2081269248'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalSplitShift(ShiftAddMethod.java:178)
+	at HpaTestCases.ShiftAddTests.SplitShiftTest(ShiftAddTests.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>HpaTestCases.ShiftAddTests@2c767a52</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HpaTestCases.LoginTest.loginmethodTest()'><b>loginmethodTest</b><br>Test class: HpaTestCases.LoginTest</td>
+<td></td>
+<td>5</td>
+<td>HpaTestCases.LoginTest@647e447</td></tr>
+<tr>
+<td title='HpaTestCases.DashboardTest.DashTest()'><b>DashTest</b><br>Test class: HpaTestCases.DashboardTest</td>
+<td></td>
+<td>3</td>
+<td>HpaTestCases.DashboardTest@41fbdac4</td></tr>
+<tr>
+<td title='HpaTestCases.AppOpenTest.appcall()'><b>appcall</b><br>Test class: HpaTestCases.AppOpenTest</td>
+<td></td>
+<td>9</td>
+<td>HpaTestCases.AppOpenTest@39529185</td></tr>
+</table><p>
+</body>
+</html>

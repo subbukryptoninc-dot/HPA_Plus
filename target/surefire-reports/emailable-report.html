@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">253,114</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">HpaTestCases.DashboardTest</td><td><a href="#m0">DashTest</a></td><td rowspan="1">1756118762411</td><td rowspan="1">31033</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">HpaTestCases.AppOpenTest</td><td><a href="#m1">appcall</a></td><td rowspan="1">1756118747768</td><td rowspan="1">14484</td></tr><tr class="passedodd"><td rowspan="1">HpaTestCases.LoginTest</td><td><a href="#m2">loginmethodTest</a></td><td rowspan="1">1756118793473</td><td rowspan="1">4206</td></tr><tr class="passedeven"><td rowspan="10">HpaTestCases.ShiftAddTests</td><td><a href="#m3">NormalShiftTest</a></td><td rowspan="2">1756118815040</td><td rowspan="2">14904</td></tr><tr class="passedeven"><td><a href="#m4">NormalShiftTest</a></td></tr><tr class="passedeven"><td><a href="#m5">NormalTrasnportTest</a></td><td rowspan="2">1756118850821</td><td rowspan="2">20544</td></tr><tr class="passedeven"><td><a href="#m6">NormalTrasnportTest</a></td></tr><tr class="passedeven"><td><a href="#m7">RepeatTest</a></td><td rowspan="2">1756118930308</td><td rowspan="2">21329</td></tr><tr class="passedeven"><td><a href="#m8">RepeatTest</a></td></tr><tr class="passedeven"><td><a href="#m9">RepeattrasnportTest</a></td><td rowspan="2">1756118976533</td><td rowspan="2">24289</td></tr><tr class="passedeven"><td><a href="#m10">RepeattrasnportTest</a></td></tr><tr class="passedeven"><td><a href="#m11">SplitShiftTest</a></td><td rowspan="2">1756118871680</td><td rowspan="2">18310</td></tr><tr class="passedeven"><td><a href="#m12">SplitShiftTest</a></td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">HpaTestCases.DashboardTest#DashTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//button[@title= &apos;Next week&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.DashboardMethod.dashboardNav(DashboardMethod.java:24)
+	at HpaTestCases.DashboardTest.DashTest(DashboardTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\progress.js:78:26)
+    at Frame.click (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\frames.js:1007:23)
+    at FrameDispatcher.click (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-86654289099877931\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//button[@title= &apos;Next week&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 44 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">HpaTestCases.AppOpenTest#appcall</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">HpaTestCases.LoginTest#loginmethodTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">HpaTestCases.ShiftAddTests#NormalShiftTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC02</td><td>2</td><td>2</td><td>04/10/2025 6:30 am</td><td>04/10/2025 6:30 pm</td><td>5</td><td>2</td><td>04/10/2025 6:30 pm</td><td>04/10/2025 8:30 pm</td><td>05/10/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">HpaTestCases.ShiftAddTests#NormalShiftTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC01</td><td>1</td><td>2</td><td>29/09/2025 06:30 AM</td><td>29/09/2025 06:30 PM</td><td>4</td><td>2</td><td>29/09/2025 06:30 PM</td><td>29/09/2025 08:30 PM</td><td>30/09/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">HpaTestCases.ShiftAddTests#NormalTrasnportTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC02</td><td>2</td><td>2</td><td>04/10/2025 6:30 am</td><td>04/10/2025 6:30 pm</td><td>5</td><td>2</td><td>04/10/2025 6:30 pm</td><td>04/10/2025 8:30 pm</td><td>05/10/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">HpaTestCases.ShiftAddTests#NormalTrasnportTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC01</td><td>1</td><td>2</td><td>29/09/2025 06:30 AM</td><td>29/09/2025 06:30 PM</td><td>4</td><td>2</td><td>29/09/2025 06:30 PM</td><td>29/09/2025 08:30 PM</td><td>30/09/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">HpaTestCases.ShiftAddTests#RepeatTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC02</td><td>2</td><td>2</td><td>04/10/2025 6:30 am</td><td>04/10/2025 6:30 pm</td><td>5</td><td>2</td><td>04/10/2025 6:30 pm</td><td>04/10/2025 8:30 pm</td><td>05/10/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">HpaTestCases.ShiftAddTests#RepeatTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC01</td><td>1</td><td>2</td><td>29/09/2025 06:30 AM</td><td>29/09/2025 06:30 PM</td><td>4</td><td>2</td><td>29/09/2025 06:30 PM</td><td>29/09/2025 08:30 PM</td><td>30/09/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">HpaTestCases.ShiftAddTests#RepeattrasnportTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC02</td><td>2</td><td>2</td><td>04/10/2025 6:30 am</td><td>04/10/2025 6:30 pm</td><td>5</td><td>2</td><td>04/10/2025 6:30 pm</td><td>04/10/2025 8:30 pm</td><td>05/10/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">HpaTestCases.ShiftAddTests#RepeattrasnportTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC01</td><td>1</td><td>2</td><td>29/09/2025 06:30 AM</td><td>29/09/2025 06:30 PM</td><td>4</td><td>2</td><td>29/09/2025 06:30 PM</td><td>29/09/2025 08:30 PM</td><td>30/09/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">HpaTestCases.ShiftAddTests#SplitShiftTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC01</td><td>1</td><td>2</td><td>29/09/2025 06:30 AM</td><td>29/09/2025 06:30 PM</td><td>4</td><td>2</td><td>29/09/2025 06:30 PM</td><td>29/09/2025 08:30 PM</td><td>30/09/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">HpaTestCases.ShiftAddTests#SplitShiftTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>TC02</td><td>2</td><td>2</td><td>04/10/2025 6:30 am</td><td>04/10/2025 6:30 pm</td><td>5</td><td>2</td><td>04/10/2025 6:30 pm</td><td>04/10/2025 8:30 pm</td><td>05/10/2025</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

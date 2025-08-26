@@ -1,0 +1,6 @@
+TestNGDepnds\DataProviderExcel.class
+HpaTestCases\DashboardTest.class
+HpaTestCases\LoginTest.class
+HpaTestCases\ShiftAddTests.class
+HpaTestCases\AppOpenTest.class
+HpaTestCases\ShiftAddMethod.class

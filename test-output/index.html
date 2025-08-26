@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 10 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Lenovo\eclipse-workspace\playwrightTestSuite\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 10 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="NormalShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">NormalShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="NormalShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">NormalShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="NormalTrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">NormalTrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="NormalTrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">NormalTrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="RepeatTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">RepeatTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="RepeatTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">RepeatTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="RepeattrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">RepeattrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="RepeattrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">RepeattrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="SplitShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">SplitShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.ShiftAddTests" class="method navigator-link" hash-for-method="SplitShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">SplitShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.DashboardTest" class="method navigator-link" hash-for-method="DashTest">DashTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.AppOpenTest" class="method navigator-link" hash-for-method="appcall">appcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="HpaTestCases.LoginTest" class="method navigator-link" hash-for-method="loginmethodTest">loginmethodTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">HpaTestCases.ShiftAddTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NormalShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">
+                  </a> <!-- NormalShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...) -->
+                  <span class="method-name">NormalShiftTest</span>
+                  <span class="parameters">(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:722)
+	at com.microsoft.playwright.impl.FrameImpl.selectOptionImpl(FrameImpl.java:689)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$selectOption$31(FrameImpl.java:677)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:677)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:119)
+	at com.microsoft.playwright.impl.LocatorImpl.selectOption(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.selectOption(Locator.java:4562)
+	at HpaPlusMethods.ShiftAddMethod.normalShift(ShiftAddMethod.java:105)
+	at HpaTestCases.ShiftAddTests.NormalShiftTest(ShiftAddTests.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NormalShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">
+                  </a> <!-- NormalShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...) -->
+                  <span class="method-name">NormalShiftTest</span>
+                  <span class="parameters">(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normalShift(ShiftAddMethod.java:96)
+	at HpaTestCases.ShiftAddTests.NormalShiftTest(ShiftAddTests.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NormalTrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">
+                  </a> <!-- NormalTrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...) -->
+                  <span class="method-name">NormalTrasnportTest</span>
+                  <span class="parameters">(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normaltranshift(ShiftAddMethod.java:137)
+	at HpaTestCases.ShiftAddTests.NormalTrasnportTest(ShiftAddTests.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NormalTrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">
+                  </a> <!-- NormalTrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...) -->
+                  <span class="method-name">NormalTrasnportTest</span>
+                  <span class="parameters">(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.normaltranshift(ShiftAddMethod.java:137)
+	at HpaTestCases.ShiftAddTests.NormalTrasnportTest(ShiftAddTests.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RepeatTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">
+                  </a> <!-- RepeatTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...) -->
+                  <span class="method-name">RepeatTest</span>
+                  <span class="parameters">(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatShift(ShiftAddMethod.java:217)
+	at HpaTestCases.ShiftAddTests.RepeatTest(ShiftAddTests.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RepeatTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">
+                  </a> <!-- RepeatTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...) -->
+                  <span class="method-name">RepeatTest</span>
+                  <span class="parameters">(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatShift(ShiftAddMethod.java:217)
+	at HpaTestCases.ShiftAddTests.RepeatTest(ShiftAddTests.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RepeattrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">
+                  </a> <!-- RepeattrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...) -->
+                  <span class="method-name">RepeattrasnportTest</span>
+                  <span class="parameters">(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatTransShift(ShiftAddMethod.java:261)
+	at HpaTestCases.ShiftAddTests.RepeattrasnportTest(ShiftAddTests.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RepeattrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">
+                  </a> <!-- RepeattrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...) -->
+                  <span class="method-name">RepeattrasnportTest</span>
+                  <span class="parameters">(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalRepeatTransShift(ShiftAddMethod.java:261)
+	at HpaTestCases.ShiftAddTests.RepeattrasnportTest(ShiftAddTests.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SplitShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)">
+                  </a> <!-- SplitShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...) -->
+                  <span class="method-name">SplitShiftTest</span>
+                  <span class="parameters">(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05/10/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalSplitShift(ShiftAddMethod.java:178)
+	at HpaTestCases.ShiftAddTests.SplitShiftTest(ShiftAddTests.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SplitShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)">
+                  </a> <!-- SplitShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...) -->
+                  <span class="method-name">SplitShiftTest</span>
+                  <span class="parameters">(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM, 30/09/2025)</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2406)
+	at HpaPlusMethods.ShiftAddMethod.NormalSplitShift(ShiftAddMethod.java:178)
+	at HpaTestCases.ShiftAddTests.SplitShiftTest(ShiftAddTests.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\server\dispatchers\dispatcher.js:273:44)
+    at transport.onmessage (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-15944170154312779295\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HpaTestCases.AppOpenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="appcall">
+                  </a> <!-- appcall -->
+                  <span class="method-name">appcall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HpaTestCases.DashboardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DashTest">
+                  </a> <!-- DashTest -->
+                  <span class="method-name">DashTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HpaTestCases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginmethodTest">
+                  </a> <!-- loginmethodTest -->
+                  <span class="method-name">loginmethodTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Lenovo\eclipse-workspace\playwrightTestSuite\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;ShiftAddTests&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;HpaTestCases.AppOpenTest&quot;/&gt;
+      &lt;class name=&quot;HpaTestCases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;HpaTestCases.DashboardTest&quot;/&gt;
+      &lt;class name=&quot;HpaTestCases.ShiftAddTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">ShiftAddTests</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">DashTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">NormalShiftTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">NormalTrasnportTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">RepeatTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">RepeattrasnportTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SplitShiftTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">appcall</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginmethodTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'appcall')
+data.setCell(0, 2, 'HpaTestCases.AppOpenTest')
+data.setCell(0, 3, 9504);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'NormalShiftTest')
+data.setCell(1, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(1, 3, 6460);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginmethodTest')
+data.setCell(2, 2, 'HpaTestCases.LoginTest')
+data.setCell(2, 3, 5239);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DashTest')
+data.setCell(3, 2, 'HpaTestCases.DashboardTest')
+data.setCell(3, 3, 3629);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'NormalTrasnportTest')
+data.setCell(4, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'RepeatTest')
+data.setCell(5, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'RepeattrasnportTest')
+data.setCell(6, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(6, 3, 3);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'RepeattrasnportTest')
+data.setCell(7, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'NormalTrasnportTest')
+data.setCell(8, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'SplitShiftTest')
+data.setCell(9, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'NormalShiftTest')
+data.setCell(10, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'RepeatTest')
+data.setCell(11, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'SplitShiftTest')
+data.setCell(12, 2, 'HpaTestCases.ShiftAddTests')
+data.setCell(12, 3, 1);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">HpaTestCases.AppOpenTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">appcall</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HpaTestCases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginmethodTest</span>
+                <span class="method-start">9522 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HpaTestCases.DashboardTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DashTest</span>
+                <span class="method-start">14763 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HpaTestCases.ShiftAddTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NormalShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</span>
+                <span class="method-start">19658 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=NormalShiftTest status=FAILURE method=ShiftAddTests.NormalShiftTest(java.lang.Strin...)</span>
+                <span class="method-start">26132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NormalShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</span>
+                <span class="method-start">26156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=NormalShiftTest status=FAILURE method=ShiftAddTests.NormalShiftTest(java.lang.Strin...)</span>
+                <span class="method-start">26162 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NormalTrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</span>
+                <span class="method-start">26564 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=NormalTrasnportTest status=FAILURE method=ShiftAddTests.NormalTrasnportTest(java.la...)</span>
+                <span class="method-start">26571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NormalTrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</span>
+                <span class="method-start">26574 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=NormalTrasnportTest status=FAILURE method=ShiftAddTests.NormalTrasnportTest(java.la...)</span>
+                <span class="method-start">26580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SplitShiftTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</span>
+                <span class="method-start">26890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=SplitShiftTest status=FAILURE method=ShiftAddTests.SplitShiftTest(java.lang.String,...)</span>
+                <span class="method-start">26893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SplitShiftTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</span>
+                <span class="method-start">26895 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=SplitShiftTest status=FAILURE method=ShiftAddTests.SplitShiftTest(java.lang.String,...)</span>
+                <span class="method-start">26900 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RepeatTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</span>
+                <span class="method-start">27163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=RepeatTest status=FAILURE method=ShiftAddTests.RepeatTest(java.lang.String,int,int,...)</span>
+                <span class="method-start">27169 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RepeatTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</span>
+                <span class="method-start">27171 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=RepeatTest status=FAILURE method=ShiftAddTests.RepeatTest(java.lang.String,int,int,...)</span>
+                <span class="method-start">27175 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RepeattrasnportTest(TC01, 1, 2, 29/09/2025 06:30 AM, 29/09/2025 06:30 PM, 4, 2, 29/09/2025 06:30 PM, 29/09/2025 08:30 PM...)</span>
+                <span class="method-start">27437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=RepeattrasnportTest status=FAILURE method=ShiftAddTests.RepeattrasnportTest(java.la...)</span>
+                <span class="method-start">27442 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RepeattrasnportTest(TC02, 2, 2, 04/10/2025 6:30 am, 04/10/2025 6:30 pm, 5, 2, 04/10/2025 6:30 pm, 04/10/2025 8:30 pm, 05...)</span>
+                <span class="method-start">27443 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonfailure([TestResult name=RepeattrasnportTest status=FAILURE method=ShiftAddTests.RepeattrasnportTest(java.la...)</span>
+                <span class="method-start">27447 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
