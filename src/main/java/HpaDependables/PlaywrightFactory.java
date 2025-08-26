@@ -34,7 +34,7 @@ public class PlaywrightFactory {
 				
 			default:
 				BrowserType.LaunchOptions options1 = new BrowserType.LaunchOptions();
-				options1.setHeadless(false);
+				options1.setHeadless(true);
 				options1.setArgs(java.util.Arrays.asList("--start-maximized"));
 				options1.setSlowMo(1000);
 				browser = playwright.chromium().launch(options1);
@@ -56,7 +56,7 @@ public class PlaywrightFactory {
 	
 	public void closeBrowser() {
 		browser.close();
-		playwright.close();
+	//	playwright.close();
 		
 		
 	}
